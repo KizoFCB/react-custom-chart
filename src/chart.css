@@ -9,7 +9,7 @@
 
 .humanContainer {
   animation-duration: 2s;
-  animation-name: slidein;
+  animation-name: loading;
   height: 456px;
   width: 159px;
   clip-path: path(
@@ -43,14 +43,12 @@
   align-self: center;
 }
 
-@keyframes slidein {
+@keyframes loading {
   from {
-    opacity: 0;
-    transform: translateY(200%);
+    height: 0%;
   }
 
   to {
-    opacity: 1;
-    transform: translateY(0);
+    height: 100%;
   }
 }
