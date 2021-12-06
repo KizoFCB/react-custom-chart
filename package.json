@@ -1,6 +1,7 @@
 {
   "name": "react-human-chart",
   "version": "1.0.0",
+  "private": false,
   "description": "A simple human chart built with typescript and create-react-app",
   "license": "MIT",
   "main": "dist/index.js",
@@ -33,10 +34,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "tsc"
   },
   "eslintConfig": {
     "extends": [
