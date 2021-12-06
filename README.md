@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# React Human Chart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A simple human chart made with create-react-app that displays percentages of input data.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+<!-- * [License](#license) -->
 
-### `yarn start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The HumanChart component receives an input dataset and a dataKey to calculate the percentages of these data on the human chart
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `yarn test`
+- Typescript - version 4.1.2
+- React - version 17.0.2
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `yarn build`
+![Example screenshot](./public/human-chart.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install the library using
+`npm i react-human-chart`
 
-### `yarn eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+How to use it?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We import the library normally in our component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`import { HumanChart } from "react-human-chart"`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We provide the component with these props
 
-## Learn More
+| prop         | type                                  | required | description                                                                                                                                                                                                                                                                 |
+| ------------ | ------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dataKey      | string                                | Yes      | The name of the key in the input dataset to calculate the percentages from. Its value can be a numeric string or a number.                                                                                                                                                  |
+| labelKey     | string                                | No       | The name of the key in the input dataset for the value labels of each percentages. Its default value is "name".                                                                                                                                                             |
+| customColors | boolean                               | No       | A flag indicating if you want to add your custom colors to each record in the dataset. For that, you have to provide a color prop to each record in the dataset containing a hex color string. Its default value is false and random colors are generated for each portion. |
+| data         | { [key: string]: string \| number }[] | Yes      | The input dataset to calculate the percentages from. Its values can be numeric strings or numbers.                                                                                                                                                                          |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+` <HumanChart data={data} dataKey="foo" />`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Room for Improvement
+
+- Multiple new animations
+- Allowing for custom styles
+- Responsive chart
+
+## Acknowledgements
+
+Give credit here.
+
+- This project was based on [this article](https://css-tricks.com/clipping-masking-css/).
+
+## Contact
+
+Created by [@kizofcb](kizofcb@gmail.com) - feel free to contact me!

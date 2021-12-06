@@ -4,6 +4,20 @@
   "description": "A simple human chart built with typescript and create-react-app",
   "license": "MIT",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KizoFCB/react-human-chart.git"
+  },
+  "keywords": [
+    "human-chart",
+    "humanChart",
+    "human",
+    "chart",
+    "react-human-chart",
+    "human-chart-js"
+  ],
+  "author": "Karim Hamdy Abd El Aziz <kizofcb@gmail.com> (https://github.com/KizoFCB)",
+  "homepage": "https://github.com/KizoFCB/react-human-chart",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
