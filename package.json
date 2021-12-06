@@ -1,7 +1,9 @@
 {
-  "name": "human-chart",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-human-chart",
+  "version": "1.0.0",
+  "description": "A simple human chart built with typescript and create-react-app",
+  "license": "MIT",
+  "main": "dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "files": [
+    "/dist",
+    "package.json"
+  ]
 }
