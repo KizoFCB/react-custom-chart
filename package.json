@@ -1,6 +1,6 @@
 {
   "name": "react-human-chart",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "description": "A simple human chart built with typescript and create-react-app",
   "license": "MIT",

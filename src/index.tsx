@@ -1,1 +1,1 @@
-export * from "./chart";
+export { default as HumanChart } from "./chart";
