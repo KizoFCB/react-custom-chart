@@ -51,5 +51,8 @@
   "files": [
     "/dist",
     "package.json"
-  ]
+  ],
+  "devDependencies": {
+    "@types/react": "^17.0.37"
+  }
 }
