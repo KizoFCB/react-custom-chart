@@ -34,7 +34,7 @@ const getDataPercentages = (
   }));
 };
 
-const HumanChart = ({
+const CustomChart = ({
   data,
   dataKey,
   clipPath,
@@ -55,7 +55,10 @@ const HumanChart = ({
           </div>
         ))}
       </div>
-      <div className="humanContainer" style={{ clipPath: `path(${clipPath})` }}>
+      <div
+        className="shapeContainer"
+        style={{ clipPath: `path('${clipPath}')` }}
+      >
         {preparedData?.map((record) => (
           <div
             key={record[labelKey]}
@@ -70,4 +73,4 @@ const HumanChart = ({
   );
 };
 
-export default HumanChart;
+export default CustomChart;
