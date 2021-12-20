@@ -161,6 +161,7 @@ How to use it?
 Giving credit here.
 
 - This project was based on [this article](https://css-tricks.com/clipping-masking-css/).
+- You could create or edit your own SVG path value using [this tool](https://yqnn.github.io/svg-path-editor/).
 
 ## Contact
 
