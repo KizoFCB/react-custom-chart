@@ -2,6 +2,7 @@ import "./chart.css";
 
 interface Props {
   dataKey: string;
+  clipPath: string;
   labelKey?: string;
   customColors?: boolean;
   data: { [key: string]: string | number }[];
@@ -36,6 +37,7 @@ const getDataPercentages = (
 const HumanChart = ({
   data,
   dataKey,
+  clipPath,
   labelKey = "name",
   customColors = false,
 }: Props) => {
@@ -53,7 +55,7 @@ const HumanChart = ({
           </div>
         ))}
       </div>
-      <div className="humanContainer">
+      <div className="humanContainer" style={{ clipPath: `path(${clipPath})` }}>
         {preparedData?.map((record) => (
           <div
             key={record[labelKey]}
