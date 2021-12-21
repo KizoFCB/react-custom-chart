@@ -25,12 +25,12 @@ var getDataPercentages = function (data, dataKey, customColors) {
             ? Number.parseInt(record[dataKey], 10)
             : record[dataKey] / totalCount) * 100).toFixed(1) })); });
 };
-var HumanChart = function (_a) {
-    var data = _a.data, dataKey = _a.dataKey, _b = _a.labelKey, labelKey = _b === void 0 ? "name" : _b, _c = _a.customColors, customColors = _c === void 0 ? false : _c;
+var CustomChart = function (_a) {
+    var data = _a.data, dataKey = _a.dataKey, clipPath = _a.clipPath, _b = _a.labelKey, labelKey = _b === void 0 ? "name" : _b, _c = _a.customColors, customColors = _c === void 0 ? false : _c;
     var preparedData = getDataPercentages(data, dataKey, customColors);
-    return (_jsxs("div", __assign({ className: "chartContainer" }, { children: [_jsx("div", { children: preparedData === null || preparedData === void 0 ? void 0 : preparedData.map(function (record) { return (_jsxs("div", __assign({ className: "labelWithValueContainer" }, { children: [_jsxs("div", __assign({ className: "labelContainer" }, { children: [_jsx("div", { style: { background: record === null || record === void 0 ? void 0 : record.color } }, void 0), _jsx("div", { children: record[labelKey] }, void 0)] }), void 0), "".concat(record === null || record === void 0 ? void 0 : record.percentage, "%")] }), record[labelKey])); }) }, void 0), _jsx("div", __assign({ className: "humanContainer" }, { children: preparedData === null || preparedData === void 0 ? void 0 : preparedData.map(function (record) { return (_jsx("div", { style: {
+    return (_jsxs("div", __assign({ className: "chartContainer" }, { children: [_jsx("div", { children: preparedData === null || preparedData === void 0 ? void 0 : preparedData.map(function (record) { return (_jsxs("div", __assign({ className: "labelWithValueContainer" }, { children: [_jsxs("div", __assign({ className: "labelContainer" }, { children: [_jsx("div", { style: { background: record === null || record === void 0 ? void 0 : record.color } }, void 0), _jsx("div", { children: record[labelKey] }, void 0)] }), void 0), "".concat(record === null || record === void 0 ? void 0 : record.percentage, "%")] }), record[labelKey])); }) }, void 0), _jsx("div", __assign({ className: "shapeContainer", style: { clipPath: "path('".concat(clipPath, "')") } }, { children: preparedData === null || preparedData === void 0 ? void 0 : preparedData.map(function (record) { return (_jsx("div", { style: {
                         height: "".concat(record === null || record === void 0 ? void 0 : record.percentage, "%"),
                         background: record === null || record === void 0 ? void 0 : record.color,
                     } }, record[labelKey])); }) }), void 0)] }), void 0));
 };
-export default HumanChart;
+export default CustomChart;

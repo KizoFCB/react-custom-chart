@@ -1,6 +1,6 @@
 {
   "name": "react-custom-chart",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": false,
   "description": "A simple custom chart built with typescript and create-react-app",
   "license": "MIT",
