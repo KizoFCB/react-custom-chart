@@ -1,24 +1,24 @@
 {
-  "name": "react-human-chart",
-  "version": "1.3.0",
+  "name": "react-custom-chart",
+  "version": "2.0.0",
   "private": false,
-  "description": "A simple human chart built with typescript and create-react-app",
+  "description": "A simple custom chart built with typescript and create-react-app",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KizoFCB/react-human-chart.git"
+    "url": "git+https://github.com/KizoFCB/react-custom-chart.git"
   },
   "keywords": [
-    "human-chart",
-    "humanChart",
-    "human",
+    "custom-chart",
+    "customChart",
+    "custom",
     "chart",
-    "react-human-chart",
-    "human-chart-js"
+    "react-custom-chart",
+    "custom-chart-js"
   ],
   "author": "Karim Hamdy Abd El Aziz <kizofcb@gmail.com> (https://github.com/KizoFCB)",
-  "homepage": "https://github.com/KizoFCB/react-human-chart",
+  "homepage": "https://github.com/KizoFCB/react-custom-chart",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "react": "^17.0.2",
