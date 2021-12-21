@@ -80,7 +80,7 @@ clipPath="M79.8764 0.479248C91.9384 0.479248 103.506 5.27084 112.035 13.7999C120
 
 ```
 
-![Example screenshot](https://media.giphy.com/media/qYFZSihVVHleXJrVNq/giphy.gif =750x)
+<img src="https://media.giphy.com/media/qYFZSihVVHleXJrVNq/giphy.gif" alt="Human example" width="750"/>
 
 ```js
 
@@ -100,7 +100,7 @@ clipPath="M202.5 45 18.75 492M18.75 492 364.375 494 201.875 44 18.75 492zM202.5 
 
 ```
 
-![Example screenshot](https://media.giphy.com/media/6JyPO8hqa1GKGoLeQ4/giphy.gif =750x)
+<img src="https://media.giphy.com/media/6JyPO8hqa1GKGoLeQ4/giphy.gif" alt="Pyramid example" width="750"/>
 
 ```js
 
@@ -120,8 +120,7 @@ clipPath="M288.1859 158.7006 335.3805 143.334 213.5565 348.2046zM22.5167 138.675
 
 ```
 
-![Example screenshot](https://media.giphy.com/media/s4i5Ag4T0WggkF39O2/giphy.gif =750x)
-
+<img src="https://media.giphy.com/media/s4i5Ag4T0WggkF39O2/giphy.gif" alt="Diamond example" width="750"/>
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
