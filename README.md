@@ -46,19 +46,19 @@ import  {  CustomChart  }  from  "react-custom-chart"
 
 const data = [
 
-{id:"1",name:"Falls and Psychotropic Medication Use",alertsCount:5},
+{ id: "1", name: "Falls and Psychotropic Medication Use", alertsCount: 5 },
 
-{id:"2",name:"Confusion and Psychotropic Use",alertsCount:6},
+{ id: "2", name: "Confusion and Psychotropic Use", alertsCount: 6 },
 
-{id:"3",name:"Dizziness",alertsCount:9},
+{ id: "3", name: "Dizziness", alertsCount: 9 },
 
-{id:"4",name:"Cardiovascular (Blood Pressure)",alertsCount:15},
+{ id: "4", name: "Cardiovascular (Blood Pressure)", alertsCount: 15 },
 
-{id:"5",name:"Opioid Use",alertsCount:25},
+{ id: "5", name: "Opioid Use", alertsCount: 25 },
 
-{id:"5",name:"Duplicate Therapies",alertsCount:26},
+{ id: "6", name: "Duplicate Therapies", alertsCount: 26 },
 
-{id:"5",name:"Duplicate Ingredients",alertsCount:27},
+{ id: "7", name: "Duplicate Ingredients", alertsCount: 27 },
 
 ]
 
@@ -134,19 +134,13 @@ Install the library using
 
 How to use it?
 
-| prop | type | required | defaultValue | description |
-
+| prop         | type                                  | required | defaultValue | description                                                                                                                                                                                                                                                                 |
 | ------------ | ------------------------------------- | -------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-| dataKey | string | Yes | | The name of the key in the input dataset to calculate the percentages from. Its value can be a numeric string or a number. |
-
-| clipPath | string | Yes | | The clip path that we should use to cut the chart into the desired shape. |
-
-| labelKey | string | No | name | The name of the key in the input dataset for the value labels of each percentages. Its default value is "name". |
-
-| customColors | boolean | No | false | A flag indicating if you want to add your custom colors to each record in the dataset. For that, you have to provide a color prop to each record in the dataset containing a hex color string. Its default value is false and random colors are generated for each portion. |
-
-| data | { [key: string]: string \| number }[] | Yes | | The input dataset to calculate the percentages from. Its values can be numeric strings or numbers. |
+| dataKey      | string                                | Yes      |              | The name of the key in the input dataset to calculate the percentages from. Its value can be a numeric string or a number.                                                                                                                                                  |
+| clipPath     | string                                | Yes      |              | The clip path that we should use to cut the chart into the desired shape.                                                                                                                                                                                                   |
+| labelKey     | string                                | No       | name         | The name of the key in the input dataset for the value labels of each percentages. Its default value is "name".                                                                                                                                                             |
+| customColors | boolean                               | No       | false        | A flag indicating if you want to add your custom colors to each record in the dataset. For that, you have to provide a color prop to each record in the dataset containing a hex color string. Its default value is false and random colors are generated for each portion. |
+| data         | { [key: string]: string \| number }[] | Yes      |              | The input dataset to calculate the percentages from. Its values can be numeric strings or numbers.                                                                                                                                                                          |
 
 ## Room for Improvement
 
